@@ -1,0 +1,14 @@
+.oneline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+footer {
+  width: 100%;
+  background-color: #960F14;
+  padding: 34px 5%; }
+  footer p {
+    font-size: 13px;
+    color: white;
+    line-height: 25px;
+    text-align: center; }

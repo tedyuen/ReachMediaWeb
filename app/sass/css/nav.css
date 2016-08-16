@@ -1,0 +1,52 @@
+.diy-bar {
+  background-color: white; }
+
+.navbar-nav > li {
+  cursor: pointer; }
+
+@media (min-width: 767px) {
+  .navbar-nav > li > a {
+    padding-top: 34px;
+    padding-bottom: 32px;
+    width: 114px;
+    text-align: center;
+    font-size: 18px; }
+  .navbar-brand {
+    height: 90px;
+    padding-top: 28px;
+    padding-bottom: 24px; }
+  .navbar {
+    min-height: 90px; }
+  .navbar-default .navbar-nav {
+    margin-left: 0px; }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    border-bottom: 6px solid #960F14; } }
+
+@media (min-width: 768px) {
+  .tab-bottom {
+    width: 0%;
+    height: 6px;
+    background-color: #960F14;
+    margin-left: 10%;
+    transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    /* Firefox 4 */
+    -webkit-transition: width 0.5s;
+    /* Safari and Chrome */
+    -o-transition: width 0.5s;
+    /* Opera */ }
+  .tab-bottom-active {
+    width: 80%; }
+  #nav-tab-0:hover #tab-0-bottom,
+  #nav-tab-1:hover #tab-1-bottom,
+  #nav-tab-2:hover #tab-2-bottom,
+  #nav-tab-3:hover #tab-3-bottom,
+  #nav-tab-4:hover #tab-4-bottom {
+    width: 80%; } }
+
+@media (min-width: 991px) {
+  .navbar-default .navbar-nav {
+    margin-left: 90px; } }

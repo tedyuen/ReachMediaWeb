@@ -1,0 +1,272 @@
+.page2-title{
+  border: 1px solid #b5b5b5;
+  width: 200px;
+  height:40px;
+  text-align: center;
+  line-height: 40px;
+  color:#b5b5b5;
+  font-size: 25px;
+  margin: auto;
+}
+
+@mixin page2-title-down-text(){
+  color:#9b9b9b;
+  font-size: 16px;
+  margin-top: 49px;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+.page2-row-1{
+  .page2-row-1-back{
+    background: url('../../images/aboutus_introductionred_img.jpg') repeat-y;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    min-height: 336px;
+    margin-top: -150px;
+    .page2-row-1-top{
+      color:#a52025;
+      font-size: 20px;
+      background-color: white;
+      height: 40px;
+      width:150px;
+      line-height: 40px;
+      text-align: center;
+      margin: auto;
+      margin-top: -20px;
+    }
+    .page2-row-1-center-frame{
+      color:white;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 70px;
+      padding-bottom: 70px;
+      line-height: 30px;
+    }
+
+  }
+}
+
+$ColorD8:#D8D8D8;
+
+
+.page2-row-2{
+  position: relative;
+  margin-top: 62px;
+  height:374px;
+  .page2-row-2-back-line{
+    height:1px;
+    width:100%;
+    background-color: $ColorD8;
+    position: absolute;
+    top:195px;
+    left:0px;
+  }
+  .page2-row-2-info{
+    position: relative;
+    margin: auto;
+    margin-top: 75px;
+
+    .page2-row-2-info-single{
+      width:19%;
+      //width:calc(100%/5.0);
+      //width: -webkit-calc(100% /5.0); /*3.09 排除margin的宽度*/
+      //width: -moz-calc(100% / 5.0);
+      height:88px;
+      position: relative;
+      float: left;
+      .page2-row-2-info-single-year{
+        color:#9b9b9b;
+        font-size: 16px;
+        width:100%;
+        text-align: center;
+        position: absolute;
+        top:5px;
+      }
+      .page2-row-2-info-single-dot-frame{
+        position: absolute;
+        width:20%;
+        height:12px;
+        bottom: 1.5px;
+        left:40%;
+        .page2-row-2-info-single-dot{
+          background: url('../../images/aboutus_timeline_icon_n.png') no-repeat;
+          background-position: center center;
+          background-size: 100%;
+          width:12px;
+          height:12px;
+          margin: auto;
+        }
+      }
+    }
+    .page2-row-2-info-single.active{
+      .page2-row-2-info-single-year{
+        color:#a52025;
+        font-size: 22px;
+        top:0px;
+      }
+      .page2-row-2-info-single-dot-frame{
+        height:15px;
+        left:40%;
+        bottom: 0px;
+        .page2-row-2-info-single-dot{
+          background: url('../../images/aboutus_timeline_icon_s.png') no-repeat;
+          width:15px;
+          height:15px;
+        }
+      }
+    }
+
+  }
+
+  .page2-row-2-text{
+    opacity:0;
+    color:#4a4a4a;
+    font-size: 16px;
+    width:90%;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    left:5%;
+    top:240px;
+    &.active{
+      opacity:1;
+    }
+  }
+}
+//以上第二层
+
+.page2-row-3{
+
+  .page2-row-3-top-frame{
+    width:100%;
+    height:476px;
+    background-color: #f4f4f4;
+    padding-top: 58px;
+    .page2-row-3-text{
+      @include page2-title-down-text;
+    }
+  }
+
+  .page2-row-3-img-frame{
+    margin-top: -160px;
+    margin-bottom: 50px;
+    article{
+      position: relative;
+      min-height:500px;
+      width: 100%;
+      .big-img{
+        &.beijing{
+          background: url('../../images/aboutus_beijing_img.jpg') no-repeat;
+          background-size: cover;
+        }
+        &.shanghai{
+          background: url('../../images/aboutus_shanghai_img.jpg') no-repeat;
+          background-size: cover;
+        }
+        &.guangzhou{
+          background: url('../../images/aboutus_guangzhou_img.jpg') no-repeat;
+          background-size: cover;
+        }
+        &.shenzhen{
+          background: url('../../images/aboutus_shenzhen_img.jpg') no-repeat;
+          background-size: cover;
+        }
+        width: 100%;
+        height:320px;
+        position: absolute;
+        left:0px;
+        top:0px;
+        background-position: center center;
+        box-shadow: 0px 0px 0px 0px rgba(188,188,188,0.3);
+      }
+      .small-shadow{
+        width: 90%;
+        position: absolute;
+        left:5%;
+        top:320px;
+        box-shadow: 0px 0px 10px 1px rgba(188,188,188,0.3);
+        height:10px;
+        transition:height 0.2s;
+        -moz-transition:height 0.2s; /* Firefox 4 */
+        -webkit-transition:height 0.2s; /* Safari and Chrome */
+        -o-transition:height 0.2s; /* Opera */
+      }
+      .page2-row-3-text-white{
+        background-color: white;
+        width: 90%;
+        padding: 35px 70px;
+        position: absolute;
+        color:black;
+        left:5%;
+        font-size: 15px;
+        top:279px;
+      }
+      .page2-row-3-city-frame{
+        position: absolute;
+        width:90%;
+        left:5%;
+        top:266px;
+        .page2-row-3-city{
+          margin: auto;
+          width:110px;
+          height:29px;
+          line-height: 29px;
+          color:white;
+          font-size: 14px;
+          text-align: center;
+          background-color: rgba(165,32,37,0.9);
+        }
+
+      }
+    }
+    article.hover{
+      .big-img {
+        box-shadow: 0px 0px 10px 1px rgba(188,188,188,0.8);
+      }
+    }
+  }
+}
+
+
+.page2-row-4{
+  padding-bottom: 89px;
+  .page2-row-4-text{
+    @include page2-title-down-text;
+  }
+}
+
+.page2-row-5{
+  margin-bottom: 100px;
+  .company-logo{
+    text-align: center;
+    margin-bottom: 20px;
+    img{
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .page2-row-3{
+    .page2-row-3-img-frame{
+      margin-top: -60px;
+      article{
+        .big-img{
+          //height:450px;
+
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

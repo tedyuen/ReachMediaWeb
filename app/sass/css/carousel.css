@@ -1,0 +1,71 @@
+.carousel-banner.page1-banner {
+  text-align: center;
+  background: #b6c0cc;
+  height: 700px;
+  background: url("../../images/home_background_img.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .carousel-banner.page1-banner .content-parent {
+    height: 700px; }
+    .carousel-banner.page1-banner .content-parent h2 {
+      font-size: 50px;
+      font-weight: 300;
+      text-align: left; }
+      .carousel-banner.page1-banner .content-parent h2 span {
+        font-weight: 900; }
+    .carousel-banner.page1-banner .content-parent h1 {
+      font-size: 55px;
+      font-weight: 300;
+      text-align: left; }
+    .carousel-banner.page1-banner .content-parent .content {
+      position: relative;
+      top: 30%;
+      color: #4A4A4A; }
+
+.carousel-banner.page3-banner {
+  height: 420px;
+  background: url("../../images/solution_background_img.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.carousel-banner.page4-banner {
+  height: 420px;
+  background: url("../../images/brand_background_img.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.carousel-banner.page5-banner {
+  height: 420px;
+  background: url("../../images/team_backgrounod_img.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.carousel-banner.page5-banner-black {
+  height: 500px;
+  background: url("../../images/team_backgrounod_2_img.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.carousel-banner.page2-banner {
+  text-align: center;
+  background: #b6c0cc;
+  height: 700px;
+  background: url("../../images/aboutus_background_img.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .carousel-banner.page2-banner .content-parent {
+    height: 700px; }
+    .carousel-banner.page2-banner .content-parent h2 {
+      font-size: 50px;
+      font-weight: 300;
+      text-align: left; }
+      .carousel-banner.page2-banner .content-parent h2 span {
+        font-weight: 900; }
+    .carousel-banner.page2-banner .content-parent h1 {
+      font-size: 55px;
+      font-weight: 300;
+      text-align: left; }
+    .carousel-banner.page2-banner .content-parent .content {
+      position: relative;
+      top: 30%;
+      color: #4A4A4A; }
