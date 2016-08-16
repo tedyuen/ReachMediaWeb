@@ -1,0 +1,23 @@
+{
+  "name": "reachmediaweb",
+  "description": "亿投传媒广告有限公司官网",
+  "main": "index.js",
+  "authors": [
+    "Ted Yuen"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "亿投传媒",
+    "ReachMedia",
+    "广告"
+  ],
+  "homepage": "http://www.reachmedia.cn/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
