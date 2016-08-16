@@ -11,6 +11,11 @@ $table-margin-top:20px;
 
 .button-frame{
   line-height: 120px;
+  padding-left: 0px;
+  .btn-default{
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }
 
 .carousel-banner.page3-banner {
@@ -155,10 +160,21 @@ section{
   background-color: $BackColor;
   .row-left{
     min-height:$table-height;
+    line-height: $table-height;
     padding: 0px;
     padding-left: 2px;
-    padding-top: $table-margin-top;
+    //padding-top: $table-margin-top;
     text-align: center;
+    &.line-first{
+      background-color: #f4f4f4;
+    }
+    &.line-second{
+      background-color: #dcdcdc;
+    }
+    &.line-third{
+      background-color: #c7c7c7;
+    }
+
     div{
       margin: auto;
       font-size: 10px;
@@ -175,6 +191,15 @@ section{
     padding-top: $table-margin-top/2;
     padding-right: 2px;
     text-align: center;
+    &.line-first{
+      background-color: #f4f4f4;
+    }
+    &.line-second{
+      background-color: #dcdcdc;
+    }
+    &.line-third{
+      background-color: #c7c7c7;
+    }
     div{
       margin: auto;
       font-size: 10px;
@@ -190,7 +215,7 @@ section{
     padding: 0px;
     padding-top: $table-margin-top;
     text-align: center;
-    background-color: $TextRedColor;
+    background-color: #c31f20;
     div{
       margin: auto;
       font-size: 12px;

@@ -2,7 +2,11 @@
   margin-bottom: 10px; }
 
 .button-frame {
-  line-height: 120px; }
+  line-height: 120px;
+  padding-left: 0px; }
+  .button-frame .btn-default {
+    padding-left: 4px;
+    padding-right: 4px; }
 
 .carousel-banner.page3-banner {
   height: 70px;
@@ -120,10 +124,16 @@ section {
   background-color: #F4F4F4; }
   .page-1-table .row-left {
     min-height: 70px;
+    line-height: 70px;
     padding: 0px;
     padding-left: 2px;
-    padding-top: 20px;
     text-align: center; }
+    .page-1-table .row-left.line-first {
+      background-color: #f4f4f4; }
+    .page-1-table .row-left.line-second {
+      background-color: #dcdcdc; }
+    .page-1-table .row-left.line-third {
+      background-color: #c7c7c7; }
     .page-1-table .row-left div {
       margin: auto;
       font-size: 10px;
@@ -137,6 +147,12 @@ section {
     padding-top: 10px;
     padding-right: 2px;
     text-align: center; }
+    .page-1-table .row-right.line-first {
+      background-color: #f4f4f4; }
+    .page-1-table .row-right.line-second {
+      background-color: #dcdcdc; }
+    .page-1-table .row-right.line-third {
+      background-color: #c7c7c7; }
     .page-1-table .row-right div {
       margin: auto;
       font-size: 10px;
@@ -149,7 +165,7 @@ section {
     padding: 0px;
     padding-top: 20px;
     text-align: center;
-    background-color: #A52025; }
+    background-color: #c31f20; }
     .page-1-table .row-center div {
       margin: auto;
       font-size: 12px;
