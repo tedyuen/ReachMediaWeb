@@ -1,7 +1,7 @@
 var $ = global.jQuery = require('jquery');
-require('bootstrap');
+//require('bootstrap');
 var angular = require('angular');
-var animate = require('animo-animate');
+//var animate = require('animo-animate');
 
 require('angular-route');
 require('angular-animate');

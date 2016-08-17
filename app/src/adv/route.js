@@ -1,7 +1,7 @@
 // Declare the main module
 var myApp = angular.module('myApp', [
   'ngRoute',
-  'ngAnimate'
+  //'ngAnimate'
 ]);
 
 // Initialize the main module
