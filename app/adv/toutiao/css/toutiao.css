@@ -119,6 +119,9 @@ section {
 .page-1-p {
   text-indent: 2em;
   font-size: 10px; }
+  .page-1-p span {
+    color: red;
+    font-weight: 900; }
 
 .page-1-table {
   background-color: #F4F4F4; }
