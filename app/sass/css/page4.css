@@ -1,6 +1,20 @@
 .page4-row-1 {
-  padding-top: 79px;
-  padding-bottom: 80px; }
+  padding-top: 79px; }
   .page4-row-1 .page4-row-1-item {
     margin-bottom: 40px;
     text-align: center; }
+
+.page4-row-text {
+  width: 80%;
+  margin-left: 10%;
+  padding: 15px;
+  border: 10px solid #A52025;
+  margin-bottom: 30px; }
+  .page4-row-text .line-1 {
+    font-weight: 900;
+    font-size: 18px;
+    color: grey; }
+  .page4-row-text .line-2 {
+    margin-top: 2px;
+    font-size: 16px;
+    color: grey; }

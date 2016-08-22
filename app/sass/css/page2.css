@@ -110,6 +110,9 @@
     text-align: center;
     width: 80%;
     margin-left: 10%; }
+    .page2-row-3 .page2-row-3-top-frame .page2-row-3-text span {
+      color: red;
+      font-weight: 900; }
 
 .page2-row-3 .page2-row-3-img-frame {
   margin-top: -160px;

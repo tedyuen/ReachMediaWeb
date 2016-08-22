@@ -1,3 +1,4 @@
+$TextRedColor:#A52025;
 .page2-title{
   border: 1px solid #b5b5b5;
   width: 200px;
@@ -148,6 +149,10 @@ $ColorD8:#D8D8D8;
     padding-top: 58px;
     .page2-row-3-text{
       @include page2-title-down-text;
+      span{
+        color:red;
+        font-weight: 900;
+      }
     }
   }
 

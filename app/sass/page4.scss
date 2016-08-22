@@ -1,8 +1,27 @@
+$TextRedColor:#A52025;
+
 .page4-row-1{
   padding-top: 79px;
-  padding-bottom: 80px;
   .page4-row-1-item{
     margin-bottom: 40px;
     text-align: center;
+  }
+}
+
+.page4-row-text{
+  width: 80%;
+  margin-left: 10%;
+  padding: 15px;
+  border: 10px solid $TextRedColor;
+  margin-bottom: 30px;
+  .line-1{
+    font-weight: 900;
+    font-size: 18px;
+    color:grey;
+  }
+  .line-2{
+    margin-top: 2px;
+    font-size: 16px;
+    color:grey;
   }
 }

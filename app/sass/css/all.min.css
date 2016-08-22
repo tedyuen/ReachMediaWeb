@@ -220,7 +220,7 @@ footer {
 .page1-row-4 {
   background-color: #f4f4f4;
   width: 100%;
-  padding-top: 44px;
+  padding-top: 64px;
   padding-bottom: 200px; }
   .page1-row-4 .page1-row-4-left {
     padding-left: 0px;
@@ -231,11 +231,11 @@ footer {
       margin-top: 42px; }
 
 .page1-row-5 {
-  margin-top: -100px;
+  margin-top: -60px;
   padding-bottom: 100px; }
   .page1-row-5 .page1-row-5-right {
     padding-left: 10px;
-    padding-top: 180px; }
+    padding-top: 72px; }
     .page1-row-5 .page1-row-5-right p {
       color: #9b9b9b;
       font-size: 20px;
@@ -391,6 +391,9 @@ footer {
     text-align: center;
     width: 80%;
     margin-left: 10%; }
+    .page2-row-3 .page2-row-3-top-frame .page2-row-3-text span {
+      color: red;
+      font-weight: 900; }
 
 .page2-row-3 .page2-row-3-img-frame {
   margin-top: -160px;
@@ -797,11 +800,25 @@ footer {
     height: 144.64945px; } }
 
 .page4-row-1 {
-  padding-top: 79px;
-  padding-bottom: 80px; }
+  padding-top: 79px; }
   .page4-row-1 .page4-row-1-item {
     margin-bottom: 40px;
     text-align: center; }
+
+.page4-row-text {
+  width: 80%;
+  margin-left: 10%;
+  padding: 15px;
+  border: 10px solid #A52025;
+  margin-bottom: 30px; }
+  .page4-row-text .line-1 {
+    font-weight: 900;
+    font-size: 18px;
+    color: grey; }
+  .page4-row-text .line-2 {
+    margin-top: 2px;
+    font-size: 16px;
+    color: grey; }
 
 .page5-title-frame {
   width: 100%;
