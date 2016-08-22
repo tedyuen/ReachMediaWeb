@@ -11,6 +11,10 @@ footer{
     color:white;
     line-height: 25px;
     text-align: center;
+    span{
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
 }
 

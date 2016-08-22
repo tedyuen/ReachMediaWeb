@@ -84,6 +84,9 @@ footer {
     color: white;
     line-height: 25px;
     text-align: center; }
+    footer p span {
+      cursor: pointer;
+      text-decoration: underline; }
 
 .diy-bar {
   background-color: white; }
