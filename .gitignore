@@ -7,3 +7,4 @@ app/build/fonts
 .tmp
 bower_components
 test/bower_components
+*.iml
