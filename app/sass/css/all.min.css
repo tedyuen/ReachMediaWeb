@@ -87,6 +87,9 @@ footer {
     footer p span {
       cursor: pointer;
       text-decoration: underline; }
+    footer p a:link, footer p a:visited, footer p a:hover, footer p a:active {
+      color: white;
+      text-decoration: underline; }
 
 .diy-bar {
   background-color: white; }
