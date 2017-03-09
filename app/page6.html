@@ -7,8 +7,8 @@
   <meta name="description" content="全国资源领先社区垂直营销一站式服务商">
   <meta name="keyword" content="亿投,亿投传媒,上海亿投,社区广告,小区广告,框架广告,电梯广告">
   <title>亿投传媒-全国资源领先社区垂直营销一站式服务商</title>
-  <!--<link rel="stylesheet" href="build/css/bootstrap.min.css">-->
-  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="build/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
   <!--[if lt IE 9]>
   <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -66,21 +66,33 @@
 </nav>
 
   <!-- 项目 -->
-  <div class="container page6">
-    <div id="gallery-content">
-      <div id="gallery-content-center">
-        <a href="images/project/template_img.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Image title will be apear here">
-          <img src="images/project/template_img.jpg" alt="gallery" class="all studio"/>
-        </a>
-        <a href="images/project/template_img.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Image title will be apear here">
-          <img src="images/project/template_img.jpg" class="all landscape" alt="gallery" />
-        </a>
-        <a href="images/project/template_img.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Image title will be apear here">
-          <img src="images/project/template_img.jpg" class="all studio" alt="gallery"/>
-        </a>
-        <a href="images/project/template_img.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Image title will be apear here">
-          <img src="images/project/template_img.jpg" class="all studio" alt="gallery"/>
-        </a>
+  <div class="container page6" ng-controller="page6Controller">
+    <div id="gallery" class="row">
+      <div id="gallery-header">
+        <div id="gallery-header-center">
+          <div id="gallery-header-center-left">
+            <div class="gallery-header-center-right-links" ng-repeat="data in classData" id="filter-{{data.className}}" name="{{data.className}}">{{data.name}}</div>
+
+          </div>
+        </div>
+      </div>
+      <!--<div class="isotope-header col-md-1">-->
+        <!--<ul>-->
+          <!--<li ng-repeat="data in classData" id="filter-{{data.className}}" name="{{data.className}}">-->
+            <!--{{data.name}}-->
+          <!--</li>-->
+        <!--</ul>-->
+
+      <!--</div>-->
+
+      <div id="gallery-content" class="col-md-11">
+        <div id="gallery-content-center">
+          <a ng-repeat="data in listData" href="" data-toggle="lightbox" data-gallery="multiimages" data-title="">
+            <img ng-src="{{data.img}}" alt="gallery" ng-class="{{data.className}}"/>
+          </a>
+
+
+        </div>
       </div>
     </div>
   </div>
@@ -126,6 +138,11 @@
         s.parentNode.insertBefore(hm, s);
       })();
     </script>
-    <script type="application/javascript" src="build/js/all.min.js"></script>
+    <script type="application/javascript" src="build/js/jquery.min.js"></script>
+    <!--<script type="application/javascript" src="build/js/animated-masonry-gallery.js"></script>-->
+    <script type="application/javascript" src="build/js/jquery.isotope.min.js"></script>
+    <script type="application/javascript" src="build/js/angular.min.js"></script>
+    <script type="application/javascript" src="build/js/page6.js"></script>
+
 </body>
 </html>

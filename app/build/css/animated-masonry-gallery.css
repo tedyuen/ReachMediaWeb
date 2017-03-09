@@ -70,12 +70,15 @@
 	width: 100%;
 }
 #gallery-header{
-	height: 100px;
-	width: 100%;
+	min-height: 100px;
+	width: 96%;
 	float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  /*margin-bottom: 50px;*/
 }
 #gallery-header-center{
-	height: 100px;
+	min-height: 100px;
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
@@ -123,6 +126,7 @@
 	padding-right: 20px;
 	padding-left: 20px;
 	margin-left: 10px;
+  margin-top: 10px;
 	font-size: 16px;
 	font-weight: 400;
 	-webkit-transition: background 0.5s;
