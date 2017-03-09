@@ -52,16 +52,25 @@ gulp.task('nodeModule',function(){
 
 });
 
+var jsArr = [
+  './app/src/main.js',
 
+  './app/src/controller/page1.js',
+  './app/src/controller/page2.js',
+  './app/src/controller/page3.js',
+  './app/src/controller/page4.js',
+  './app/src/controller/page5.js',
+  './app/src/route.js',
+];
 //---- js
 gulp.task('js-build',function(){
-  gulp.src(['./app/src/main.js','./app/src/page2.js','./app/src/route.js'])
+  gulp.src(jsArr)
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./app/src'))
     .pipe(rename({suffix: '.min'}))
     .pipe(browserify())
     .pipe(uglify())
-    //.pipe(obfuscate())
+    //.pipe(obfuscate())e
     .pipe(gulp.dest('./app/build/js'));
 });
 

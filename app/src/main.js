@@ -8,3 +8,7 @@ require('angular-animate');
 var LogUtil = require('./bean/LogUtil');
 var log = new LogUtil(true);//Set can out log.
 
+var myApp = angular.module('myApp', [
+  'ngRoute',
+  'ngAnimate'
+]);

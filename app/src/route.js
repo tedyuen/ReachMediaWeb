@@ -1,8 +1,5 @@
 // Declare the main module
-var myApp = angular.module('myApp', [
-  'ngRoute',
-  'ngAnimate'
-]);
+
 
 // Initialize the main module
 myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location, $window) {
@@ -15,7 +12,7 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
    * @param  {String} pageAnimationClass A classname defining the desired page transition
    */
   $rootScope.go = function (path, pageAnimationClass) {
-
+    console.log("go 1");
     if (typeof(pageAnimationClass) === 'undefined') { // Use a default, your choice
       $rootScope.pageAnimationClass = 'crossFade';
     }
@@ -23,29 +20,19 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
     else { // Use the specified animation
       $rootScope.pageAnimationClass = pageAnimationClass;
     }
+    console.log("go 2");
 
     if (path === 'back') { // Allow a 'back' keyword to go to previous page
       $window.history.back();
     }
 
+
     else { // Go to the specified path
       $location.path(path);
-      $('.tab-bottom').removeClass('tab-bottom-active');
-      if(path=="/page1"){
-        $('#tab-0-bottom').addClass('tab-bottom-active');
-      }else if(path=="/page2"){
-        $('#tab-1-bottom').addClass('tab-bottom-active');
-        setTimeout(pageJsInit,500);
-      }else if(path=="/page3"){
-        $('#tab-2-bottom').addClass('tab-bottom-active');
-      }else if(path=="/page4"){
-        $('#tab-3-bottom').addClass('tab-bottom-active');
-      }else if(path=="/page5"){
-        $('#tab-4-bottom').addClass('tab-bottom-active');
-      }
       $(function(){ $(window).scrollTop(0)});
       $('.navbar-collapse').removeClass('in');
     }
+    console.log("go 3");
   };
 }]);
 
@@ -53,25 +40,37 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
 myApp.config(['$routeProvider', function ($routeProvider) {
 
   'use strict';
+  // $urlRouterProvider.when('','/page1').otherwise('/page1');
 
   $routeProvider
     .when('/page1', {
-      templateUrl: 'page1.html'
+      templateUrl: 'page1.html',
+      controller:'page1Controller'
     })
     .when('/page2', {
-      templateUrl: 'page2.html'
+      templateUrl: 'page2.html',
+      controller:'page2Controller'
     })
     .when('/page3', {
-      templateUrl: 'page3.html'
+      templateUrl: 'page3.html',
+      controller:'page3Controller'
     })
     .when('/page4', {
-      templateUrl: 'page4.html'
+      templateUrl: 'page4.html',
+      controller:'page4Controller'
     })
     .when('/page5', {
-      templateUrl: 'page5.html'
+      templateUrl: 'page5.html',
+      controller:'page5Controller'
     })
+    // .when('/page6', {
+    //   templateUrl: './page6.html',
+    //   controller:'page6Controller'
+    // })
+
 
     .otherwise({
-      templateUrl: 'page1.html'
+      templateUrl: 'page1.html',
+      controller:'page1Controller'
     });
 }]);
