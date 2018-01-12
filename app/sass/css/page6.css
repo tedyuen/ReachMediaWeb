@@ -1,6 +1,4 @@
 .page6 {
-  margin-top: 120px;
-  color: red; }
-
-#gallery {
-  min-height: 700px; }
+  margin-top: 120px; }
+  .page6 #gallery {
+    min-height: 700px; }

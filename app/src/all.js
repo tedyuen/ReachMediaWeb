@@ -135,7 +135,7 @@ myApp.config(['$routeProvider', function ($routeProvider) {
 
   $routeProvider
     .when('/page1', {
-      templateUrl: 'page1.html',
+      templateUrl: 'page1-new.html',
       controller:'page1Controller'
     })
     .when('/page2', {
@@ -161,7 +161,7 @@ myApp.config(['$routeProvider', function ($routeProvider) {
 
 
     .otherwise({
-      templateUrl: 'page1.html',
+      templateUrl: 'page1-new.html',
       controller:'page1Controller'
     });
 }]);
