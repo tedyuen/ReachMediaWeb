@@ -388,9 +388,14 @@ $PRIMARY:#A71E2B;
   }
   .img-logo {
     width:785px;
+    height:376px;
     position: absolute;
     top:300px;
     right:195px;
+    background-image: url('../../images/homenew/20.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
   }
   .text-2 {
     position: absolute;
@@ -416,6 +421,7 @@ $PRIMARY:#A71E2B;
 
 @media (max-width: 766px){
   .page1-row-1 {
+    width:100vw;
     height:170vw;
     margin-top: -107px;
     text-align: center;
@@ -423,6 +429,7 @@ $PRIMARY:#A71E2B;
     font-family: '微软雅黑 Regular', '微软雅黑';
     color:white;
     .frame {
+      width:100vw;
       height:170vw;
       margin: auto;
       .top {
@@ -515,70 +522,321 @@ $PRIMARY:#A71E2B;
   }
   .page1-row-2 {
     width:100vw;
-    height:595px;
+    height:160vw;
     background: url('../../images/homenew/8.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
     position: relative;
     .line-1 {
-      width:300px;
-      height:4px;
-      background-color: white;
+      width: 22vw;
+      height: 1vw;
+      background-color: #fff;
       position: absolute;
-      top:66px;
-      left:0px;
+      top: 12vw;
+      left: 0;
     }
     .line-2 {
-      width:300px;
-      height:4px;
+      width: 22vw;
+      height: 1vw;
       background-color: white;
       position: absolute;
-      top:66px;
+      top: 12vw;
       right:0px;
     }
     .text-2 {
       position: absolute;
-      top:120px;
-      left:250px;
-      font-size: 48px;
+      top: 25vw;
+      left: 10vw;
+      font-size: 6vw;
       font-weight: 600;
       span{
-        font-size: 78px;
+        font-size: 10vw;
         font-weight: 900;
       }
     }
     .img-left {
-      width:404px;
+      width: 70vw;
       position: absolute;
-      top:274px;
-      left:196px;
+      top: 46vw;
+      left: 14vw;
     }
     .img-right {
-      width:405px;
+      width: 70vw;
       position: absolute;
-      top:274px;
-      left:565px;
+      top: 100vw;
+      left: 18vw;
     }
     .title {
-      width:556px;
-      height:45px;
+      width: 50vw;
+      height: 10vw;
       position: absolute;
-      top:44px;
-      left:303px;
+      top: 4vw;
+      left: 20vw;
       .text-1 {
         position: absolute;
-        top:3px;
-        left:36px;
-        font-size: 28px;
+        top: 1vw;
+        left: 21vw;
+        font-size: 5vw;
         font-weight: 400;
       }
       .img-title {
-        width:342px;
+        width: 40vw;
         position: absolute;
-        top:0px;
-        left:181px;
+        top: 8vw;
+        left: 11vw;
       }
+    }
+  }
+  .page1-row-3 {
+    width:100vw;
+    height:290vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .img-back {
+      width:100vw;
+      position: absolute;
+      left:0vw;
+      top:10vw;
+    }
+    .line-1 {
+      width: 22vw;
+      height: 1vw;
+      background-color: $PRIMARY;
+      position: absolute;
+      top: 14vw;
+      left: 0;
+    }
+    .line-2 {
+      width: 22vw;
+      height: 1vw;
+      background-color:$PRIMARY;
+      position: absolute;
+      top:14vw;
+      right:0px;
+    }
+    .title {
+      width: 50vw;
+      height: 10vw;
+      position: absolute;
+      top: 5vw;
+      left: 24vw;
+      .text-1 {
+        position: absolute;
+        top: 0vw;
+        left: 17vw;
+        font-size: 5vw;
+        font-weight: 400;
+        color:black;
+      }
+      .img-title {
+        width: 40vw;
+        top: 8vw;
+        left: 7vw;
+        position: absolute;
+      }
+    }
+    .text-2 {
+      position: absolute;
+      top: 23vw;
+      left: 17vw;
+      font-size: 7vw;
+      font-weight: 600;
+      color:$PRIMARY;
+      letter-spacing: 1px;
+      span{
+        font-size: 12vw;
+        font-weight: 900;
+      }
+    }
+    .text-3 {
+      position: absolute;
+      top: 40vw;
+      left: 4vw;
+      font-size: 7vw;
+      font-weight: 600;
+      color:$PRIMARY;
+      letter-spacing: 1px;
+      span{
+        font-size: 12vw;
+        font-weight: 900;
+      }
+    }
+    .img-frame {
+      width: 70vw;
+    /* height: 423px; */
+      position: absolute;
+      top: 60vw;
+      left: 22vw;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      .img-item {
+        width:50vw;
+        height:35vw;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2vw;
+        img {
+          width:50vw;
+        }
+        div {
+          width:30vw;
+          color:#999899;
+          border-left: 1vw solid #999899;
+          text-align: left;
+          font-size: 3vw;
+          padding-left: 2vw;
+          margin-bottom: 2vw;
+          margin-top: 2vw;
+        }
+      }
+    }
+  }
+  .page1-row-4 {
+    width:100vw;
+    height:132vw;
+    background: url('../../images/homenew/8.jpg') no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .line-1 {
+      width:22vw;
+      height:1vw;
+      background-color: white;
+      position: absolute;
+      top:14vw;
+      left:0vw;
+    }
+    .line-2 {
+      width:22vw;
+      height:1vw;
+      background-color: white;
+      position: absolute;
+      top:14vw;
+      right:0vw;
+    }
+    ul {
+      width: 70vw;
+      font-size: 6vw;
+      position: absolute;
+      top: 28vw;
+      left: 15vw;
+      font-weight: 900;
+      li {
+        text-align: left;
+        line-height: 9vw;
+        margin-bottom: 5vw;
+      }
+    }
+    .img-right {
+      width: 70vw;
+      position: absolute;
+      top: 77vw;
+      left: 15vw;
+    }
+    .title {
+      width: 60vw;
+      height: 15vw;
+      position: absolute;
+      top: 6vw;
+      left: 22vw;
+      .text-1 {
+        position: absolute;
+        top: 0;
+        left: 18vw;
+        font-size: 5vw;
+        font-weight: 400;
+      }
+      .img-title {
+        width: 50vw;
+        position: absolute;
+        top: 8vw;
+        left: 3vw;
+      }
+    }
+  }
+  .page1-row-5 {
+    width:100vw;
+    height:147vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .line-1 {
+      width:22vw;
+      height:1vw;
+      background-color: $PRIMARY;
+      position: absolute;
+      top:14vw;
+      left:0px;
+    }
+    .line-2 {
+      width:22vw;
+      height:1vw;
+      background-color: $PRIMARY;
+      position: absolute;
+      top:14vw;
+      right:0vw;
+    }
+    .title {
+      width: 60vw;
+      height: 16vw;
+      position: absolute;
+      top: 6vw;
+      left: 23vw;
+      .text-1 {
+        position: absolute;
+        top: 1vw;
+        left: 17vw;
+        font-size: 5vw;
+        font-weight: 400;
+        color:black;
+      }
+      .img-title {
+        width: 50vw;
+        position: absolute;
+        top: 8vw;
+        left: 2vw;
+      }
+    }
+    .img-logo {
+      width:70vw;
+      height:90.7vw;
+      position: absolute;
+      top:43vw;
+      right:15vw;
+      background-image: url('../../images/homenew/logo.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center center;
+    }
+    .text-2 {
+      position: absolute;
+      top: 23vw;
+      left: 6vw;
+      font-size: 7vw;
+      font-weight: 600;
+      color:black;
+      letter-spacing: 1px;
+      span{
+        font-size: 12vw;
+        font-weight: 900;
+      }
+    }
+    .text-3 {
+      position: absolute;
+      top: 136vw;
+      left: 51vw;
+      font-size: 3vw;
+      color:#cccccc;
     }
   }
 }
