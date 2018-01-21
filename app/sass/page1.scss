@@ -414,6 +414,174 @@ $PRIMARY:#A71E2B;
   }
 }
 
+@media (max-width: 766px){
+  .page1-row-1 {
+    height:170vw;
+    margin-top: -107px;
+    text-align: center;
+    font-weight: 300;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    color:white;
+    .frame {
+      height:170vw;
+      margin: auto;
+      .top {
+        background: $PRIMARY;
+        width:100vw;
+        height:27vw;
+        position: relative;
+        .text-1 {
+          position: absolute;
+          top:2vw;
+          left:2vw;
+          font-size: 10vw;
+          font-weight: 400;
+          letter-spacing: 2px;
+        }
+        .text-2 {
+          position: absolute;
+          top:17vw;
+          left:2vw;
+          font-size: 4vw;
+          letter-spacing: 8px;
+        }
+        .qrcode {
+          width:16vw;
+          position: absolute;
+          top:3vw;
+          left:75vw;
+        }
+        .text-3 {
+          position: absolute;
+          top:19vw;
+          left:68vw;
+          font-size: 2vw;
+          width:30vw;
+          text-align: center;
+        }
+      }
+      .bottom {
+        width:100vw;
+        position: relative;
+        .guanggao-1 {
+          width:80vw;
+          position: absolute;
+          top:7vw;
+          left:10vw;
+        }
+        .bottom-right {
+          width:80vw;
+          height:50vw;
+          border-top: 3px solid $PRIMARY;
+          border-bottom: 3px solid $PRIMARY;
+          position: absolute;
+          top:84vw;
+          left:10vw;
+          .bottom-text-1 {
+            position: absolute;
+            top:4vw;
+            left:7vw;
+            font-size: 5vw;
+            font-weight: 400;
+            color:black;
+          }
+          .bottom-text-2 {
+            position: absolute;
+            top:16vw;
+            left:12vw;
+            font-size: 8vw;
+            letter-spacing: 1px;
+            color:$PRIMARY;
+            font-weight: 900;
+          }
+          .bottom-text-3 {
+            position: absolute;
+            top:30vw;
+            left:28vw;
+            font-size: 8vw;
+            letter-spacing: 1px;
+            font-weight: 900;
+            color:black;
+          }
+          .img-mediaform{
+            width:40vw;
+            position: absolute;
+            top:4vw;
+            left:30vw;
+          }
+        }
+      }
+    }
+  }
+  .page1-row-2 {
+    width:100vw;
+    height:595px;
+    background: url('../../images/homenew/8.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    .line-1 {
+      width:300px;
+      height:4px;
+      background-color: white;
+      position: absolute;
+      top:66px;
+      left:0px;
+    }
+    .line-2 {
+      width:300px;
+      height:4px;
+      background-color: white;
+      position: absolute;
+      top:66px;
+      right:0px;
+    }
+    .text-2 {
+      position: absolute;
+      top:120px;
+      left:250px;
+      font-size: 48px;
+      font-weight: 600;
+      span{
+        font-size: 78px;
+        font-weight: 900;
+      }
+    }
+    .img-left {
+      width:404px;
+      position: absolute;
+      top:274px;
+      left:196px;
+    }
+    .img-right {
+      width:405px;
+      position: absolute;
+      top:274px;
+      left:565px;
+    }
+    .title {
+      width:556px;
+      height:45px;
+      position: absolute;
+      top:44px;
+      left:303px;
+      .text-1 {
+        position: absolute;
+        top:3px;
+        left:36px;
+        font-size: 28px;
+        font-weight: 400;
+      }
+      .img-title {
+        width:342px;
+        position: absolute;
+        top:0px;
+        left:181px;
+      }
+    }
+  }
+}
 /// 下面是旧的
 
 // .page1-row-1{
