@@ -420,10 +420,15 @@ $PRIMARY:#A71E2B;
 }
 
 @media (max-width: 766px){
+  .carousel-banner.page1-banner{
+    background-size: 100% 100%;
+    width:100vw;
+    height: 60vw;
+  }
   .page1-row-1 {
     width:100vw;
     height:170vw;
-    margin-top: -107px;
+    margin-top: 0px;
     text-align: center;
     font-weight: 300;
     font-family: '微软雅黑 Regular', '微软雅黑';
